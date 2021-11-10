@@ -10,7 +10,7 @@
         <tab id="mdg_catalog" translate="label" sortOrder="200">
             <label>You trying to build something</label>
         </tab>
-        <section id="mdg_catalog_section" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="mdg_catalog" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Something... great</label>
             <tab>mdg_catalog</tab>
             <resource>Mdg_Catalog::add_to_price</resource>
