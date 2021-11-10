@@ -30,6 +30,6 @@ class AddToPricePlugin
 
     public function afterGetPrice(ProductInterface $subject, $result)
     {
-        return $result + $this->addToPriceConfig->getValue();
+        return $result + $this->addToPriceConfig->getValue('store');
     }
 }

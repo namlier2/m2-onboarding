@@ -33,11 +33,17 @@ class AddToPrice
      * The "mdg_catalog/prices/add_to_price" config value.
      * Returns value of the config value.
      *
+     * @param string $scopeType
+     * @param null $scopeCode
      * @return float
      */
-    public function getValue(): float
+    public function getValue(string $scopeType = ScopeConfigInterface::SCOPE_TYPE_DEFAULT, $scopeCode = null): float
     {
-        $value = $this->scopeConfig->getValue(self::CONFIG_PATH);
+        $value = $this->scopeConfig->getValue(
+            self::CONFIG_PATH,
+            $scopeType,
+            $scopeCode
+        );
 
         return (float)$value;
     }

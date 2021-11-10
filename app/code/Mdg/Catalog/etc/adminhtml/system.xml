@@ -16,7 +16,7 @@
             <resource>Mdg_Catalog::add_to_price</resource>
             <group id="prices" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Something that matters</label>
-                <field id="add_to_price" translate="label" type="text" sortOrder="10" showInDefault="1" canRestore="1">
+                <field id="add_to_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Add to price</label>
                     <validate>integer</validate>
                     <hint>Bringing new ideas</hint>
